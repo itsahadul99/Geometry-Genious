@@ -88,3 +88,22 @@ function pentagonAreaCalculate(){
     p.style.fontWeight = 'bold';
     calculationContainer.appendChild(p);
 }
+
+// Ellipse part
+
+function ellipseAreaCalculate(){
+    const ellipseAInput = document.getElementById('ellipse-a');
+    const ellipseAInputText = ellipseAInput.value;
+    const a = parseFloat(ellipseAInputText);
+    const ellipseBInput = document.getElementById('ellipse-b');
+    const ellipseBInputText = ellipseAInput.value;
+    const b = parseFloat(ellipseBInputText);
+    const area = Math.PI * a * b;
+    const calculationContainer = document.getElementById('calculation-container');
+    const p = document.createElement('p');
+    p.innerText =+ count + ('. ') + 'Pentagon area is: '+ area.toFixed(4);
+    count++;
+    p.style.fontSize = '.9rem';
+    p.style.fontWeight = 'bold';
+    calculationContainer.appendChild(p);
+}

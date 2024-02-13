@@ -105,6 +105,23 @@
                         </div>
                     </div>
                 </div>
+                <!-- Ellipse card -->
+                <div class="card card-compact w-96 bg-base-100 shadow-xl space-y-2">
+                    <figure><img src="/images/ellipse.png" alt="Shoes" /></figure>
+                    <div class="card-body text-center">
+                        <h2 class="card-title flex justify-center">Ellipse</h2>
+                        <p class="text-lg">Area (A) = &Pi;ab</p>
+                        <div class="inline-block text-2xl space-y-2">
+                            <input id="ellipse-a" class="w-24 p-2 rounded-sm" type="text" placeholder="a">
+                            <span>cm</span>
+                            <input id="ellipse-b" class="w-24 p-2 rounded-sm" type="text" placeholder="b">
+                            <span>cm</span>
+                        </div>
+                        <div class="card-actions py-3">
+                            <button onclick="ellipseAreaCalculate()" class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- calculation container -->
             <div id="calculation-container" class="border-2 rounded-md ">
