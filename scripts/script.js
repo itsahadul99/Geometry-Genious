@@ -107,3 +107,7 @@ function ellipseAreaCalculate(){
     p.style.fontWeight = 'bold';
     calculationContainer.appendChild(p);
 }
+
+// Hover effect
+
+const card = document.get
