@@ -28,22 +28,24 @@
                         <h2 class="card-title flex justify-center">Triangle</h2>
                         <p class="text-lg">Area (A) = 0.5 X b X h</p>
                         <div class="inline-block text-2xl space-y-2">
-                            <input class="w-24 p-2 rounded-sm" type="text" placeholder="b">
+                            <input id="triangle-base" class="w-24 p-2 rounded-sm" type="text" placeholder="b">
                             <span>cm</span>
-                            <input class="w-24 p-2 rounded-sm" type="text" placeholder="h">
+                            <input id="triangle-height" class="w-24 p-2 rounded-sm" type="text" placeholder="h">
                             <span>cm</span>
                         </div>
                         <div class="card-actions py-3">
-                            <button class="btn btn-primary w-full">Buy Now</button>
+                            <button onclick="triangleCalculateArea()" id="triangle-calculate" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- calculation container -->
-            <div class="w-96 border-2 rounded-md text-center">
-                <h3 class="text-3xl ">Area Calculation</h3>
+            <div id="calculation-container" class="w-96 border-2 rounded-md ">
+                <h3 class="text-3xl text-center mb-5">Area Calculation</h3>
             </div>
         </div>
+
+        <script src="./scripts/script.js"></script>
 </body>
 
 </html>
