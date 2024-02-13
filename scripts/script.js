@@ -9,7 +9,7 @@ function triangleCalculateArea(){
     const area = 0.5 * base * height;
     const calculationContainer = document.getElementById('calculation-container');
     const p = document.createElement('p');
-    p.innerText =+ count + ('. ') + 'Rectangle Area is: '+ area;
+    p.innerText =+ count + ('. ') + 'Triangle area is: '+ area;
     count++;
     p.style.fontSize = '.9rem';
     p.style.fontWeight = 'bold';
@@ -27,7 +27,7 @@ function rectangleAreaCalculate(){
     const area = width * length;
     const calculationContainer = document.getElementById('calculation-container');
     const p = document.createElement('p');
-    p.innerText =+ count + ('. ') + 'Rectangle Area is: '+ area;
+    p.innerText =+ count + ('. ') + 'Rectangle area is: '+ area;
     count++;
     p.style.fontSize = '.9rem';
     p.style.fontWeight = 'bold';
@@ -46,7 +46,7 @@ function parallelogramAreaCalculate(){
     const area = base * height;
     const calculationContainer = document.getElementById('calculation-container');
     const p = document.createElement('p');
-    p.innerText =+ count + ('. ') + 'Parallelogram Area is: '+ area;
+    p.innerText =+ count + ('. ') + 'Parallelogram area is: '+ area;
     count++;
     p.style.fontSize = '.9rem';
     p.style.fontWeight = 'bold';
@@ -64,7 +64,7 @@ function rhombusAreaCalculate(){
     const area = 0.5 * d1 * d2;
     const calculationContainer = document.getElementById('calculation-container');
     const p = document.createElement('p');
-    p.innerText =+ count + ('. ') + 'Rhombus Area is: '+ area;
+    p.innerText =+ count + ('. ') + 'Rhombus area is: '+ area;
     count++;
     p.style.fontSize = '.9rem';
     p.style.fontWeight = 'bold';
@@ -108,6 +108,3 @@ function ellipseAreaCalculate(){
     calculationContainer.appendChild(p);
 }
 
-// Hover effect
-
-const card = document.get
