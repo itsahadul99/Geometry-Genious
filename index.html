@@ -17,13 +17,12 @@
     </header>
     <main>
         <!-- Main section start here  -->
-        <div class="flex flex-col md:flex-row">
+        <div class="flex flex-col-reverse md:flex-row">
             <!-- Shape card container -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 <!-- triangle card -->
                 <div class="card card-compact w-96 bg-base-100 shadow-xl space-y-2">
-                    <figure><img src="/images/triangle.png"
-                            alt="Shoes" /></figure>
+                    <figure><img src="/images/triangle.png" alt="Shoes" /></figure>
                     <div class="card-body text-center">
                         <h2 class="card-title flex justify-center">Triangle</h2>
                         <p class="text-lg">Area (A) = 0.5 X b X h</p>
@@ -34,7 +33,41 @@
                             <span>cm</span>
                         </div>
                         <div class="card-actions py-3">
-                            <button onclick="triangleCalculateArea()" id="triangle-calculate" class="btn btn-primary w-full">Calculate</button>
+                            <button onclick="triangleCalculateArea()" class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- rectangle card -->
+                <div class="card card-compact w-96 bg-base-100 shadow-xl space-y-2">
+                    <figure><img src="/images/rectangle.png" alt="Shoes" /></figure>
+                    <div class="card-body text-center">
+                        <h2 class="card-title flex justify-center">Rectangle</h2>
+                        <p class="text-lg">Area (A) = 0.5 X w X l</p>
+                        <div class="inline-block text-2xl space-y-2">
+                            <input id="rectangle-width" class="w-24 p-2 rounded-sm" type="text" placeholder="w">
+                            <span>cm</span>
+                            <input id="rectangle-length" class="w-24 p-2 rounded-sm" type="text" placeholder="l">
+                            <span>cm</span>
+                        </div>
+                        <div class="card-actions py-3">
+                            <button onclick="rectangleAreaCalculate()" class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Parallelogram card -->
+                <div class="card card-compact w-96 bg-base-100 shadow-xl space-y-2">
+                    <figure><img src="/images/parallelogram.png" alt="Shoes" /></figure>
+                    <div class="card-body text-center">
+                        <h2 class="card-title flex justify-center">Parallelogram</h2>
+                        <p class="text-lg">Area (A) = 0.5 X w X l</p>
+                        <div class="inline-block text-2xl space-y-2">
+                            <input id="parallelogram-base" class="w-24 p-2 rounded-sm" type="text" placeholder="b">
+                            <span>cm</span>
+                            <input id="parallelogram-height" class="w-24 p-2 rounded-sm" type="text" placeholder="h">
+                            <span>cm</span>
+                        </div>
+                        <div class="card-actions py-3">
+                            <button onclick="parallelogramAreaCalculate()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
