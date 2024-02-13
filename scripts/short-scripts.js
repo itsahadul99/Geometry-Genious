@@ -8,7 +8,6 @@ function getInputField(idName){
 }
 // display the value
 function setValue (value){
-    const cm = 'cm';
     const where = document.getElementById('calculation-container');
     const p = document.createElement('p');
     p.innerText =+ count + ('. ')+ value;
