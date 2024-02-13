@@ -11,17 +11,22 @@
 
 </head>
 
-<body class="m-8">
+<body class=" m-0 lg:m-8">
     <header>
-
+        <nav class="container flex flex-col lg:flex-row justify-between items-center pb-10 bg-[#E7F4FB] p-5 rounded-md mb-5 lg:mb-10 space-y-5 lg:space-y-0">
+            <h1 class=" text-3xl lg:text-6xl flex flex-col font-bold">Interactive
+                <span class="text-xl lg:text-3xl font-semibold">Geometry Genius</span>
+            </h1>
+            <button class="btn bg-cyan-400 px-10 text-xl rounded-full">Blog</button>
+        </nav>
     </header>
     <main class="container mx-auto">
         <!-- Main section start here  -->
-        <div class="flex flex-col-reverse md:flex-col-reverse lg:flex-row gap-5">
+        <div class="flex flex-col-reverse md:flex-col-reverse lg:flex-row gap-3">
             <!-- Shape card container -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
                 <!-- triangle card -->
-                <div id="triangle" class="card card-compact w-72 lg:w-96 bg-base-100 shadow-xl space-y-2">
+                <div id="triangle" class="card p-5 card-compact w-72 lg:w-96 bg-base-100 shadow-xl space-y-2 mx-auto">
                     <figure><img src="./images/triangle.png" alt="triangle" /></figure>
                     <div class="card-body text-center">
                         <h2 class="card-title flex justify-center">Triangle</h2>
@@ -38,7 +43,7 @@
                     </div>
                 </div>
                 <!-- rectangle card -->
-                <div id="rectangle" class="card card-compact w-72 lg:w-96 bg-base-100 shadow-xl space-y-2">
+                <div id="rectangle" class="card p-5 card-compact w-72 lg:w-96 bg-base-100 shadow-xl space-y-2 mx-auto">
                     <figure><img src="./images/rectangle.png" alt="rectangle" /></figure>
                     <div class="card-body text-center">
                         <h2 class="card-title flex justify-center">Rectangle</h2>
@@ -55,7 +60,7 @@
                     </div>
                 </div>
                 <!-- Parallelogram card -->
-                <div id="parallelogram" class="card card-compact w-72 lg:w-96 bg-base-100 shadow-xl space-y-2">
+                <div id="parallelogram" class="card p-5 card-compact w-72 lg:w-96 bg-base-100 shadow-xl space-y-2 mx-auto">
                     <figure><img src="./images/parallelogram.png" alt="Parallelogram" /></figure>
                     <div class="card-body text-center">
                         <h2 class="card-title flex justify-center">Parallelogram</h2>
@@ -72,7 +77,7 @@
                     </div>
                 </div>
                 <!-- Rhombus card -->
-                <div id="rhombus" class="card card-compact w-72 lg:w-96 bg-base-100 shadow-xl space-y-2">
+                <div id="rhombus" class="card p-5 card-compact w-72 lg:w-96 bg-base-100 shadow-xl space-y-2 mx-auto">
                     <figure><img src="./images/rhombus.png" alt="Rhombus" /></figure>
                     <div class="card-body text-center">
                         <h2 class="card-title flex justify-center">Rhombus</h2>
@@ -89,7 +94,7 @@
                     </div>
                 </div>
                 <!-- Pentagon card -->
-                <div id="pentagon" class="card card-compact w-72 lg:w-96 bg-base-100 shadow-xl space-y-2">
+                <div id="pentagon" class="card p-5 card-compact w-72 lg:w-96 bg-base-100 shadow-xl space-y-2 mx-auto">
                     <figure><img src="./images/pentagon.png" alt="Pentagon" /></figure>
                     <div class="card-body text-center">
                         <h2 class="card-title flex justify-center">Pentagon</h2>
@@ -106,7 +111,7 @@
                     </div>
                 </div>
                 <!-- Ellipse card -->
-                <div id="ellipse" class="card card-compact w-full sm:w-72 lg:w-96 bg-base-100 shadow-xl space-y-2">
+                <div id="ellipse" class="card p-5 card-compact w-72 mx-auto sm:w-72 lg:w-96 bg-base-100 shadow-xl space-y-2">
                     <figure><img src="./images/ellipse.png" alt="Ellipse" /></figure>
                     <div class="card-body text-center">
                         <h2 class="card-title flex justify-center">Ellipse</h2>
@@ -124,8 +129,8 @@
                 </div>
             </div>
             <!-- calculation container -->
-            <div id="calculation-container" class="border-2 rounded-md mx-auto w-full lg:w-60">
-                <h3 class="text-3xl text-center mb-5">Area Calculation</h3>
+            <div id="calculation-container" class="border-2 rounded-md mx-auto w-fit lg:w-fit">
+                <h3 class="text-3xl text-center mb-5 pt-5 font-semibold">Area Calculation</h3>
                 <p id="calculation-display" class="text-sm font-bold"></p>
             </div>
         </div>
