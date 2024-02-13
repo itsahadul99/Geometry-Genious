@@ -15,11 +15,11 @@
     <header>
 
     </header>
-    <main>
+    <main class="container mx-auto">
         <!-- Main section start here  -->
-        <div class="flex flex-col-reverse md:flex-row">
+        <div class="flex flex-col-reverse md:flex-row gap-5">
             <!-- Shape card container -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                 <!-- triangle card -->
                 <div class="card card-compact w-96 bg-base-100 shadow-xl space-y-2">
                     <figure><img src="/images/triangle.png" alt="Shoes" /></figure>
@@ -71,10 +71,28 @@
                         </div>
                     </div>
                 </div>
+                <!-- Rhombus card -->
+                <div class="card card-compact w-96 bg-base-100 shadow-xl space-y-2">
+                    <figure><img src="/images/rhombus.png" alt="Shoes" /></figure>
+                    <div class="card-body text-center">
+                        <h2 class="card-title flex justify-center">Rhombus</h2>
+                        <p class="text-lg">Area (A) = 0.5 X w X l</p>
+                        <div class="inline-block text-2xl space-y-2">
+                            <input id="rhombus-d1" class="w-24 p-2 rounded-sm" type="text" placeholder="d1">
+                            <span>cm</span>
+                            <input id="rhombus-d2" class="w-24 p-2 rounded-sm" type="text" placeholder="d2">
+                            <span>cm</span>
+                        </div>
+                        <div class="card-actions py-3">
+                            <button onclick="rhombusAreaCalculate()" class="btn btn-primary w-full">Calculate</button>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- calculation container -->
-            <div id="calculation-container" class="w-96 border-2 rounded-md ">
+            <div id="calculation-container" class="border-2 rounded-md ">
                 <h3 class="text-3xl text-center mb-5">Area Calculation</h3>
+                <p id="calculation-display" class="text-sm font-bold"></p>
             </div>
         </div>
 
