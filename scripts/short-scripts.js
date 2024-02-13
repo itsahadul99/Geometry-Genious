@@ -60,3 +60,56 @@ function ellipseAreaCalculate(){
     const finalArea = area.toFixed(2);
     setValue('Ellipse area is: ' + finalArea);
 }
+// hover effect
+const triangle = document.getElementById('triangle');
+function triangleHover(){
+    triangle.style.backgroundColor = 'pink'
+}
+triangle.addEventListener('mouseover',triangleHover)
+triangle.addEventListener('mouseleave',function(){
+    triangle.style.backgroundColor = 'white'
+});
+
+const rectangle = document.getElementById('rectangle');
+function rectangleHover(){
+    rectangle.style.backgroundColor = 'aqua'
+}
+rectangle.addEventListener('mouseover',rectangleHover)
+rectangle.addEventListener('mouseleave',function(){
+    rectangle.style.backgroundColor = 'white'
+});
+
+const parallelogram = document.getElementById('parallelogram');
+function parallelogramHover(){
+    parallelogram.style.backgroundColor = 'coral'
+}
+parallelogram.addEventListener('mouseover',parallelogramHover)
+parallelogram.addEventListener('mouseleave',function(){
+    parallelogram.style.backgroundColor = 'white'
+});
+
+const rhombus = document.getElementById('rhombus');
+function rhombusHover(){
+    rhombus.style.backgroundColor = 'beige';
+}
+rhombus.addEventListener('mouseover',rhombusHover)
+rhombus.addEventListener('mouseleave',function(){
+    rhombus.style.backgroundColor = 'white'
+});
+const pentagon = document.getElementById('pentagon');
+function pentagonHover(){
+    pentagon.style.backgroundColor = 'teal';
+}
+pentagon.addEventListener('mouseover',pentagonHover)
+pentagon.addEventListener('mouseleave',function(){
+    pentagon.style.backgroundColor = 'white'
+});
+const ellipse = document.getElementById('ellipse');
+function ellipseHover(){
+    ellipse.style.backgroundColor = 'gold';
+}
+ellipse.addEventListener('mouseover',ellipseHover)
+ellipse.addEventListener('mouseleave',function(){
+    ellipse.style.backgroundColor = 'white'
+});
+
